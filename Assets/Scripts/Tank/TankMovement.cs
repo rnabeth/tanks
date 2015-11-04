@@ -22,11 +22,10 @@ public class TankMovement : MonoBehaviour
         m_Rigidbody = GetComponent<Rigidbody>();
     }
 
-    //Called after Awake but before any of the Updates
+    //Called after Awake but before any of the Updates (only once)
     private void OnEnable()
     {
-        m_Rigidbody.isKinematic = false;
-        //So no forces are applied, for instance when the tank is hit by the enemy shell
+        m_Rigidbody.isKinematic = false; //So no forces are applied, for instance when the tank is hit by the enemy shell
         m_MovementInputValue = 0f;
         m_TurnInputValue = 0f;
     }
