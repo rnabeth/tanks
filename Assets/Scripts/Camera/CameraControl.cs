@@ -6,7 +6,7 @@ public class CameraControl : MonoBehaviour
     public float m_ScreenEdgeBuffer = 4f; // To make sure that the tanks are on the edge of the screen
     public float m_MinSize = 6.5f;
 
-    /*[HideInInspector]*/
+    [HideInInspector]
     public Transform[] m_Targets;
 
     private Camera m_Camera;
